@@ -14,38 +14,64 @@
             <h1>Header Goes Here</h1>
         </header>
 
-        <nav><h2>Menu Goes Here</h2>
-            <ul>
-                <li>Home</li>
-                <li>Catiline</li>
-                <li>Deiotarus</li>
-                <li>Murena</li>
-                <li>Caelius</li>
-                <li>Pompey</li>
-                <li>House</li>
-                <li>Provinces</li>
-                <li>Philippic</li>
+        <nav class="col_nav">  
+
+
+            <div class="smallmenu">
+            <span id="show1">
+              <a href="#" onClick="document.getElementById('text1').style.display='block';
+            document.getElementById('hide1').style.display='inline';
+            document.getElementById('show1').style.display='none'; return false;" style="text-decoration: none;" style="font-size: 30px;">
+                + menu</a> 
+              </span>
+              
+              <span id="hide1" style="display: none;">
+              <a href="#" onClick="document.getElementById('text1').style.display='none';
+            document.getElementById('hide1').style.display='none';
+            document.getElementById('show1').style.display='inline'; return false;" style="text-decoration: none;" style="font-size: 30px;">
+              &ndash; menu</a>
+            </span>
+            </div>
+            
+            
+            <ul id="text1" class="expander">
+            <li>Home</li>
+            <li><a href="catiline.html">Against Catiline</a></li>
+            <li><a href="deiotarus.html">For King Deiotarus</a></li>
+            <li><a href="murena.html">For Lucius Murena</a></li>
+            <li><a href="caelius.html">For Marcus Caelius</a></li>
+            <li><a href="pompey.html">On Pompey</a></li>
+            <li><a href="house.html">On his House</a></li>
+            <li><a href="provinces.html">On the Provinces</a></li>
+            <li><a href="philippic.html">Philippic</a></li>
             </ul>
-        </nav>
+            
+             </nav>
 
         <main>
-            <h2>Main Goes Here</h2>Cicero has been traditionally considered the master of Latin prose, with Quintilian
+            <h2>Main Goes Here</h2>
+            <p>Cicero has been traditionally considered the master of Latin prose, with Quintilian
             declaring Cicero was "not the name of a man, but of eloquence itself." He is credited with transforming
             Latin from a modest utilitarian language into a versatile literary medium capable of expressing abstract and
             complicated thoughts with clarity.
+            </p>
 			
         </main>
 
         <aside>
-            <h2>Aside Goes Here</h2><br>Quintilian declaring Cicero was "not the name of a man, but of eloquence
+            <h2>Aside Goes Here</h2><br>
+            <p>Quintilian declaring Cicero was "not the name of a man, but of eloquence
             itself." He is credited with transforming Latin from a modest utilitarian language into a versatile literary
             medium capable of expressing abstract and complicated
+            </p>
         </aside>
 
         <footer>
-            <h2>Footer Goes Here</h2>During the chaotic latter half of the first century BC, marked by civil wars and
+            <h2>Footer Goes Here</h2>
+            <p>During the chaotic latter half of the first century BC, marked by civil wars and
             the dictatorship of Gaius Julius Caesar, Cicero championed a return to the traditional republican
             government.
+            </p>
             <p>Thanks to Dr. William Helling of IUPUI and w3schools.com (https://www.w3schools.com/css/css_grid.asp) -- Kasper Valtakari</p>
         </footer>
 
