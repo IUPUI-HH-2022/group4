@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: black;
 }
 
 h1 {
@@ -62,12 +62,12 @@ nav ul {
 nav a
 	{
 	text-decoration: none;
-	color: #000000;
+	color: #ffffff;
 	}
 
 nav a:visited
 	{
-	color: #000000;
+	color: #ffffff;
 	}		
 
 
@@ -99,7 +99,7 @@ nav ul li a
 .short-intro {
     padding-top: 5px;
     padding-bottom: 30px;
-    border-top: solid black 1px;
+    border-top: solid rgb(255, 255, 255) 1px;
     display: flex;
     width: 600px;
 }
