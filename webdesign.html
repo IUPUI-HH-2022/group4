@@ -21,14 +21,39 @@
     </nav>
 
     <header>
-        <h2>Web design best practices</h2>
-        <p>text goes here</p>
+        <h2>Web Design For Visually Impaired use &#8212 Best Practices</h2>
+
+        <p>When creating a website for visually impaired users, the priorities of design change completely. Design concepts which are completely natural to us normal users, may actually be difficult to access for users who use screen readers or other assistive tools. Here are some things to keep in mind! </p>
+
     </header>
     <!--main content goes here-->
-    <main></main>
+    <main>
+
+        <h2>Be Descriptive:</h2>
+
+        <p>Being descriptive with your website elements is very important when the user cannot see visual indicators or objects. For example, a button labeled “click here” will be totally useless for screen reader users, since they have no idea what the button they are clicking does. The same goes for labeling multiple buttons with various colors.  The button labels should be descriptive enough that a user accessing your site with a screen reader can navigate the interface and understand the options without needing to see the colors. </p>
+
+        <h2>Use Headings And Maintain A Good Objective Hierarchy:</h2>
+
+        <p>One of the main things screen readers use to interpret a website is object hierarchy. They especially rely on headings. It is important to pay attention to your headings and ensure that the heading tags, h1, h2, h3, are used to create a sensible hierarchy. This way users with screen readers can use their tools to skim through pages much quicker by jumping between headings without having the other content read aloud. </p>
+
+        <h2>Keep Screen Readers In Mind When Adding Your Content:</h2>
+
+        <p>Content can also be optimized for screen readers. One of the guidelines to keep in mind when creating content which is easily forgotten: DO NOT USE ACRONYMS. These are often interpreted and read out loud as a word, rather than as individual letters. If you have ever typed gibberish or an acronym into Google Translate and had it read out, you most likely have experienced how this might sound. Please, do not subject your screen reader users to that. </p>
+
+        <h2>Use Semantic Elements:</h2>
+
+        <p>Screen readers are designed to process sites with semantic elements, making sites that use them much easier to navigate than ones that don’t. So, rather than using div’s with various id’s, use semantic elements to structure your site, and you’ll be making the use of screen readers much easier for your users. With the use of semantic elements, it creates a possibility for screen reader users to quickly skip around parts of your site and quickly “scan” the site for information. This speeds up the process of reading the site significantly, making your site much more accommodating.</p>
+
+        <h2>ARIA Labels:</h2>
+
+        <p>There is a built-in feature in html that is made for adapting websites for screen reader users. These “ARIA tags” are easy to use, and make your websites much easier to use with a screen reader. ARIA tags come in handy when you cannot add a descriptive text to a button or other element, you can then add the “aria-label”-attribute to the element and declare a string, which the screen reader will read out. For example, if your site has a button with the title of “X” to symbolize an exit button, without an ARIA tag the screen reader would read out “X button”. Now if we add an ARIA label to the button with the value of “Close Menu”, the screen reader would read out “Close menu button”. These are extremely useful, if you’re just now implementing accessibility features to an already used website, and don’t want to alter its layout or design.
+        </p>
+
+    </main>
 
     <footer>
-        <p>@ 2022 by Group4, IUPUI & Haaga-Helia AMK</p>
+        <p>&#169 2022 by Group4, IUPUI & Haaga-Helia AMK</p>
     </footer>
 </body>
 
