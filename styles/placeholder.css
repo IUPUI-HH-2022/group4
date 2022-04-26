@@ -140,3 +140,19 @@ ul li a {
 footer {
   background-color: beige;
 }
+
+/* Mobile Break point */
+@media only screen and (max-width : 600px) {
+  nav ul {
+    width: 100%;
+    display: inline;
+    text-align: center;
+  }
+
+  nav a {
+    font-size: large;
+  }
+  nav ul li {
+    padding: 10px;
+  }
+}
