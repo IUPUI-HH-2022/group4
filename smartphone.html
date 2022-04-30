@@ -5,22 +5,53 @@
     <meta charset="utf-8">
     <title>Smartphones for the blind</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="styles/placeholder.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 
+<!--responsive navigation-->
+<nav>  
+
+    <div class="smallmenu">
+    <span id="show1">
+      <a href="#" onClick="document.getElementById('text1').style.display='inline';
+    document.getElementById('hide1').style.display='inline';
+    document.getElementById('show1').style.display='none'; return false;" style="text-decoration: none;">
+        + menu</a> 
+      </span>
+      
+      <span id="hide1" style="display: none;">
+      <a href="#" onClick="document.getElementById('text1').style.display='none';
+    document.getElementById('hide1').style.display='none';
+    document.getElementById('show1').style.display='inline'; return false;" style="text-decoration: none;">
+      &ndash; menu</a>
+    </span>
+    </div>
+    
+    
+    <ul id="text1" class="expander">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="screenreader.html">Screen Readers</a></li>
+        <li><a href="webdesign.html">Web Design Practices</a></li>
+        <li><a href="smartphone.html">Smartphones</a></li>
+        <li><a href="othercases.html">Other Cases and Technology</a></li>
+    </ul>
+    
+</nav>
+
 <body>
+    <!--Old nav bar-->
     <!--Top menu-->
-    <nav class="menu">
+    <!--<nav class="menu">
         <ul>
-            <li><a href="index.html">Home</a></li>
             <li><a href="screenreader.html">Screen Readers</a></li>
             <li><a href="webdesign.html">Web Design Practices</a></li>
+            <li><a href="smartphone.html">Smartphones</a></li>
             <li><a href="othercases.html">Other Cases and Technology</a></li>
         </ul>
-    </nav>
+    </nav> -->
 
     <header>
-        <h2>Smartphones and the accessibility</h2>
+        <h1>Smartphones and the accessibility</h1>
 
         <p>Unlike people with normal vision who interact with smartphones, tablets, and computers using their eyes, blind users are believed to have difficulties in using those devices, or seem to be cut off from these technologies. However, as technology has evolved, companies are taking people with vision disability into account and providing many accessibility tweaks and software that enable blind users to navigate websites and use apps. 
             <p>Wondering how blind people actually use a smartphone? Here is an example:
