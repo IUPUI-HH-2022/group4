@@ -3,7 +3,7 @@ body {
   color: black;
   background-color: white;
   max-width: 1920px;
-  margin: 0 auto;
+  margin: 0 auto; /*this makes the whole body in the center instead of left-aligned when being in bigger screen than 1920px*/
 }
 
 h1 {
@@ -65,27 +65,28 @@ p {
 /* NAV MENU STYLES */
 
 nav{
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
+  display: flex;
 }
 
 nav ul {
-  display: inline;
+  /*display: inline;*/
   margin-left: 0;
   list-style: none;
-  gap: 20px;
   background-color: #884694;
-  padding: 20px 0px;
+  padding: 17px 0px 19px;
+  margin: 0;
+  width: 100vw;
 }
 
 nav a {
   text-decoration: none;
   color:#ffffff;
   font-size: 20px;
-  margin-top: 20px;
 }
 
 nav ul li {
-  padding: 20px 10px;
+  padding: 20px 30px;
   font-weight: bold;
   display: inline;
 }
@@ -109,8 +110,46 @@ ul li a {
 
 .smallmenu {
 	display: none;
-	font-size: 2em;
+	font-size: 1.5em;
 	}
+
+@media screen and (max-width: 1161px) {
+
+  .smallmenu { 
+      display:block;
+      text-align: left;
+      padding-top: .5em;
+      font-size: 1em;
+      border-top: 1px dotted #000000;
+      }	
+              
+  .smallmenu a
+      {
+      color: #000000;	    
+      font-weight: bold;
+      text-decoration: none;
+      }	
+      
+  nav.expander li
+      {
+      display: inline;
+      padding: 10px;
+      margin: 20px;
+      }		
+    
+  nav.expander ul li a {
+        font-size: small;
+      }
+    
+  .expander
+      {
+      display: none;
+      }
+    }
+    
+  @media only screen and (min-width : 1161px) {  
+  .expander	{display: inline !important}  /* just in case the menu wants to stay at display:none when viewport grows wider */ 
+    }
 
 /*main styles*/
 .column-intro {
@@ -160,6 +199,7 @@ button:hover{
 .img-text h3 {
   padding-left: 0;
 }
+
 /*sources link style*/
 .sources a{
   color: #000000;
@@ -192,7 +232,8 @@ figcaption {
 .example-img {
   padding-left: 30px;
   height: auto;
-  width: 50%;
+  max-width: 650px;
+  width: 90%;
 }
 
 iframe {
@@ -219,6 +260,11 @@ iframe {
     width: 280px;
     height: 180px;
   }
+}
+
+.fingerreader-img {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*footer style*/
@@ -252,48 +298,3 @@ footer p {
 }
 
 */
-
-@media screen and (max-width: 60em) {
-
-  .smallmenu	
-    {
-    display:block;
-    text-align: left;
-    padding-top: .5em;
-    font-size: 1em;
-    border-top: 1px dotted #000000;
-    }	
-            
-  .smallmenu a
-    {
-    color: #000000;	    
-    font-weight: bold;
-    text-decoration: none;
-    }	
-    
-  nav.expander li
-    {
-    display: inline;
-    padding: 10px;
-    margin: 20px;
-    }		
-  
-    nav.expander ul li a{
-      font-size: small;
-    }
-  
-  .expander
-    {
-    display: none
-    }	
-    
-    
-  
-  }
-  
-  @media only screen and (min-width : 61em) {
-  
-  .expander	{display: inline !important}  /* just in case the menu wants to stay at display:none when viewport grows wider */
-  
-  
-  }
