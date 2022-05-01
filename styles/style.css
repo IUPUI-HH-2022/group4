@@ -107,8 +107,7 @@ ul li a {
 
 /*  MENU EXPANDER */
 
-.smallmenu
-	{
+.smallmenu {
 	display: none;
 	font-size: 2em;
 	}
@@ -158,6 +157,9 @@ button:hover{
   color: #ffffff;
 }
 
+.img-text h3 {
+  padding-left: 0;
+}
 /*sources link style*/
 .sources a{
   color: #000000;
@@ -171,7 +173,7 @@ button:hover{
   margin-bottom: 10px;
 }
 
-/*Seeing-AI list style*/
+/*Seeing-AI list style on smartphone sub-page*/
 .seeing-ai li:hover{
   background-color: white;
   cursor:auto;
