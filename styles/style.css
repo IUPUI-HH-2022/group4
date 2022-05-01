@@ -3,12 +3,13 @@ body {
   color: black;
   background-color: white;
   max-width: 1920px;
+  margin: 0 auto;
 }
 
 h1 {
   font-family: Arial, sans-serif;
   font-weight: bolder;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.16em;
   padding: 60px 30px ;
   font-size: 57px;
   background-color: #fad105;
@@ -16,6 +17,19 @@ h1 {
   color: #884694;
   margin-top: 4px;
   
+}
+
+/*h1 when in phone screen size is too big so I made it smaller - Chi*/
+@media (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 360px) {
+  h1 {
+    font-size: 30px;
+  }
 }
 
 h2 {
@@ -33,9 +47,10 @@ h3 {
   font-weight: bold;
   letter-spacing: 0.1em;
   padding: 5px;
-  padding-left: 0;
+  padding-left: 30px;
   border-bottom: 5px solid #581182
 }
+
 p {
   font-family: Arial;
   font-weight: 500;
@@ -47,9 +62,6 @@ p {
 
 }
 
-/*Header styles*/
-
-
 /* NAV MENU STYLES */
 
 nav{
@@ -58,27 +70,19 @@ nav{
 
 nav ul {
   display: inline;
-  
   margin-left: 0;
   list-style: none;
   gap: 20px;
   background-color: #884694;
-  padding: 20px 5px;
-
-  
-  
+  padding: 20px 0px;
 }
 
 nav a {
   text-decoration: none;
   color:#ffffff;
   font-size: 20px;
+  margin-top: 20px;
 }
-
-
-
-
-
 
 nav ul li {
   padding: 20px 10px;
@@ -90,10 +94,6 @@ nav ul li a {
   font-weight: bold;
   letter-spacing: 00.1em;
 }
-
-
-
-
 
 ul li:hover {
   background-color: #fad105;
@@ -131,6 +131,7 @@ ul li a {
   width: 600px;
   background-color: #581182;
   color: white;
+  box-shadow: 2px 3px 2px 0px gray;
 }
 
 .square-img {
@@ -138,15 +139,18 @@ ul li a {
   object-position: center;
   height: 200px;
   width: 200px;
-  
+  margin-top: 20px;
   padding: 10px 30px 0;
 }
+
 button{
   background-color: #fad105;
-  padding: 6px 4px;
+  padding: 7px 6px;
   border-style: hidden;
   font-family: Arial;
   font-size: 20px;
+  cursor: pointer;
+  box-shadow: 1px 2px 2px 0px;
 }
 
 button:hover{
@@ -154,9 +158,77 @@ button:hover{
   color: #ffffff;
 }
 
+/*sources link style*/
+.sources a{
+  color: #000000;
+  font-weight: 600;
+  line-height: 25px;
+}
+
+/*align p in .short-intro part */
+.short-intro p {
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+
+/*Seeing-AI list style*/
+.seeing-ai li:hover{
+  background-color: white;
+  cursor:auto;
+}
+
+.seeing-ai li {
+  line-height: 25px;
+}
+/*styling the photos, figcaption and iframe in subpages*/
+figcaption {
+  font-style: italic;
+  margin: 10px 0;
+  padding-left: 30px;
+}
+
+.example-img {
+  padding-left: 30px;
+  height: auto;
+  width: 50%;
+}
+
+iframe {
+  width: 680px;
+  height: 520px;
+  padding-left: 30px;
+}
+
+@media (max-width: 710px) {
+  iframe {
+    width: 450px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 510px){
+  iframe {
+    width: 400px;
+    height: 300px;
+  }
+}
+@media (max-width: 430px) {
+  iframe {
+    width: 280px;
+    height: 180px;
+  }
+}
+
 /*footer style*/
 footer {
-  background-color: beige;
+  background-color: #fad105;
+  height: max-content;
+  margin-top: 30px;
+  margin-bottom: -16px;
+}
+
+footer p {
+  padding: 10px 0;
 }
 
 
@@ -216,12 +288,6 @@ footer {
     
   
   }
-  
-  
-  
-  
-  
-  
   
   @media only screen and (min-width : 61em) {
   
