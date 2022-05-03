@@ -8,18 +8,14 @@
     <link rel="stylesheet" href="styles/style.css" id="theme">
     <script src="scripts/accessability.js"></script>
 </head>
-
-<!--responsive navigation-->
 <nav>  
-
     <div class="smallmenu">
     <span id="show1">
       <a href="#" onClick="document.getElementById('text1').style.display='inline';
     document.getElementById('hide1').style.display='inline';
     document.getElementById('show1').style.display='none';" style="text-decoration: none;">
         + menu</a> 
-      </span>
-      
+      </span>   
       <span id="hide1" style="display: none;">
       <a href="#" onClick="document.getElementById('text1').style.display='none';
     document.getElementById('hide1').style.display='none';
@@ -27,8 +23,6 @@
       &ndash; menu</a>
     </span>
     </div>
-    
-    
     <ul id="text1" class="expander">
         <li><a href="index.html">Home</a></li>
         <li><a href="screenreader.html">Screen Readers</a></li>
@@ -40,17 +34,6 @@
 </nav>
 
 <body>
-    <!--Old nav bar-->
-    <!--Top menu-->
-    <!--<nav class="menu">
-        <ul>
-            <li><a href="screenreader.html">Screen Readers</a></li>
-            <li><a href="webdesign.html">Web Design Practices</a></li>
-            <li><a href="smartphone.html">Smartphones</a></li>
-            <li><a href="othercases.html">Other Cases and Technology</a></li>
-        </ul>
-    </nav> -->
-
     <header>
         <h1>Navigating Technology for Visually Impaired Users</h1>
         <h2>Visually Impaired in the Digital World</h2>
@@ -62,91 +45,50 @@
     </header>
 
     <main>
-
-        <h2>What to know?</h2>
-        
+        <h2>What to know?</h2>        
             <div class="column-intro">
                 <div class="short-intro">
                     <div>
                         <img class="square-img" src="images/screenreader.jpg" alt="screen reader">
                     </div>
                     <div class="img-text">
-
                         <h3>Screen Readers & Tools</h3>
-
-                        <p>Screen reading technology and accessibility features on home computers.</p>
-
-                        <button type="button" onclick="toggleText()">Learn more</button>
-
-                        <p id="disappear" style="display: none;">Learn more about screen reading technology, including built-in and external tools. View examples of this technology and how it works. Gain understanding of how this technology works from a visually impaired user’s perspective. </p>
-
+                        <p>Learn more about screen reading technology, including built-in and external tools. View examples of this technology and how it works. Gain understanding of how this technology works from a visually impaired user’s perspective. </p>
+                      <a href="screenreader.html">  <button type="button">Learn more</button></a>
+                        </p>
                     </div>
-
                 </div>
 
                 <div class="short-intro">
-                    <div>
                         <img class="square-img" src="images/webdesign.jpg" alt="website design">
-                    </div>
-
                     <div class="img-text">
                         <h3>Web Design: <br> Best Practices</h3>
-                        <p>Some best practices for designing websites to aid in comprehension and navigability for blind users.</p>
-                        <button type="button" onclick="toggleText2()">Learn more</button>
-                        <p id="disappear2" style="display: none;">Familiarize yourself with some of the best methods for designing websites to aid in comprehension and navigability for blind users. Compare examples of what might be considered good and bad design, as well as experience what a screen reader might comprehend. </p>
-
+                        <p>Familiarize yourself with some of the best methods for designing websites to aid in comprehension and navigability for blind users. Compare examples of what might be considered good and bad design, as well as experience what a screen reader might comprehend.</p>
+                       <a href="webdesign.html">  <button type="button">Learn more</button></a>      
                     </div>
-
                 </div>
 
                 <div class="short-intro">
-
-                    <div>
-
                         <img class="square-img" src="images/smartphone.jpg" alt="smartphone">
-
-                    </div>
-
                     <div class="img-text">
-
                         <h3>Smartphones And Its Accessibility Features</h3>
-
-                        <p>Introduce and explain how blind users navigate smartphone interfaces and some apps for navigating to outside world.</p>
-
-                        <button type="button" onclick="toggleText3()">Learn more</button>
-
-                        <p id="disappear3" style="display: none;">Understand how mobile technology comes into play and what new challenges smartphones bring to the table. See what accessibility features are currently offered and how they work for the mobile world, as well as apps that have been developed to tackle these issues.  </p>
-
+                        <p>Understand how mobile technology comes into play and what new challenges smartphones bring to the table. See what accessibility features are currently offered and how they work for the mobile world, as well as apps that have been developed to tackle these issues. </p>
+                       <a href="smartphone.html">  <button type="button">Learn more</button></a>
                     </div>
-
                 </div>
 
                 <div class="short-intro">
-
-                    <div>
-
                         <img class="square-img" src="images/braille-typewriter.jpg" alt="other technology">
-
-                    </div>
-
                     <div class="img-text">
-
                         <h3>More User Cases <br> and technology</h3>
-
-                        <p>Introduce interesting other use cases, existing and upcoming technology for the blind and vision impaired users.</p>
-
-                        <button type="button" onclick="toggleText4()">Learn more</button>
-
-                        <p id="disappear4" style="display: none;">Read up on other interesting use cases as well as other forms of technology and how it has been adapted for blind and visually impaired users. Learn about some older technology, as well as some new technology. View examples that might inspire more inclusive design practices in the future.</p>
-
+                        <p>Read up on other interesting use cases as well as other forms of technology and how it has been adapted for blind and visually impaired users. Learn about some older technology, as well as some new technology. View examples that might inspire more inclusive design practices in the future.</p>
+                       <a href="othercase.html"> <button type="button">Learn more</button></a>
                     </div>
                 </div>
             </div>
     </main>
-
         <footer>
             <p>&#169 2022 by Group4, IUPUI & Haaga-Helia AMK</p>
         </footer>
 </body>
-
 </html>
