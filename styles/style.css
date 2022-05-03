@@ -2,7 +2,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   background-color: white;
-  max-width: 1920px;
+  max-width: 1000px;
   margin: 0 auto; /*this makes the whole body in the center instead of left-aligned when being in bigger screen than 1920px*/
 }
 
@@ -20,6 +20,7 @@ h1 {
 }
 
 /*h1 when in phone screen size is too big so I made it smaller - Chi*/
+
 @media (max-width: 600px) {
   h1 {
     font-size: 40px;
