@@ -2,7 +2,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: black;
   background-color: white;
-  max-width: 1000px;
+  max-width: 1300px;
   margin: 0 auto; /*this makes the whole body in the center instead of left-aligned when being in bigger screen than 1920px*/
 }
 
