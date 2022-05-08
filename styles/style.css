@@ -4,7 +4,7 @@ body {
   background-color: white;
   max-width: 1300px;
   margin: 0 auto; /*this makes the whole body in the center instead of left-aligned when being in bigger screen than 1920px*/
-}
+} 
 
 h1 {
   font-family: Arial, sans-serif;
@@ -312,21 +312,171 @@ footer p {
 }
 
 
-/* Mobile Break point 
-@media only screen and (max-width : 600px) {
-  nav ul {
-    width: 100%;
-    display: inline;
-    text-align: center;
-  }
+/* High contrast mode CSS */
 
-  nav a {
-    font-size: large;
-  }
+.highcontrast {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  background-color: black;
+  max-width: 1300px;
+  margin: 0 auto;
 
-  nav ul li {
-    padding: 10px;
+}
+
+.highcontrast h1 {
+  font-family: Arial, sans-serif;
+  font-weight: bolder;
+  letter-spacing: 0.16em;
+  padding: 60px 30px ;
+  font-size: 57px;
+  background-color: white;
+  display: block;
+  color: black;
+  margin-top: 4px;
+}
+
+.highcontrast h2 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding: 25px 0 25px 30px;
+  font-size: 30px;
+  border-bottom: 10px solid white;
+  color: white;
+}
+
+.highcontrast h3 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding: 5px;
+  padding-left: 30px;
+  border-bottom: 5px solid black
+}
+
+@media (max-width: 600px) {
+  .highcontrast h1 {
+    font-size: 40px;
   }
 }
 
-*/
+@media (max-width: 360px) {
+  .highcontrast h1 {
+    font-size: 30px;
+  }
+}
+
+.highcontrast .short-intro {
+  padding-top: 5px;
+  padding-bottom: 30px;
+  border-top: solid black 1px;
+  display: flex;
+  width: 600px;
+  background-color: white;
+  color: black;
+  box-shadow: 2px 3px 2px 0px gray;
+}
+
+.highcontrast button{
+  background-color: black;
+  color: white;
+  padding: 7px 6px;
+  border-style: hidden;
+  font-family: Arial;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 1px 2px 2px 0px;
+}
+
+.highcontrast .sources a{
+  color: white;
+  font-weight: 600;
+  line-height: 25px;
+}
+/* High contrast NAV */
+.highcontrast nav ul {
+  /*display: inline;*/
+  margin-left: 0;
+  list-style: none;
+  background-color: black;
+  padding: 17px 0px 19px;
+  margin: 0;
+  width: 100vw;
+}
+
+.highcontrast ul li:hover {
+  background-color: white;
+  color: #000000;
+}
+.highcontrast ul li:hover a {
+  color: inherit;
+}
+
+.highcontrast .smallmenu a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.highcontrast footer {
+  background-color: white;
+  color: black;
+  height: max-content;
+  margin-top: 30px;
+  margin-bottom: -16px;
+}
+
+/* High contrast button */
+.contrastbutton {
+	position:fixed;
+	width:100px;
+	height:60px;
+	bottom:40px;
+	left:20px;
+	background-color:black;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  cursor: pointer;
+}
+
+.highcontrast .contrastbutton {
+	position:fixed;
+	width:100px;
+	height:60px;
+	bottom:40px;
+	left:20px;
+	background-color:white;
+	color:black;
+	border-radius:50px;
+	text-align:center;
+}
+
+/* Make button not change color if screen too small, since text blocks are white */
+@media (max-width: 800px) {
+  .highcontrast .contrastbutton {
+    position:fixed;
+    width:100px;
+    height:60px;
+    bottom:40px;
+    left:20px;
+    background-color:black;
+    color:white;
+    border-radius:50px;
+    text-align:center;
+  }
+}
+
+.contrastbuttontext {
+	padding-top: 30px;
+  line-height:20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  position: absolute;
+  font-style: bold;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}

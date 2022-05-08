@@ -6,6 +6,7 @@
     <title>Other use cases</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/accessability.js"></script>
 </head>
 <nav>  
 
@@ -13,14 +14,14 @@
     <span id="show1">
       <a href="#" onClick="document.getElementById('text1').style.display='inline';
     document.getElementById('hide1').style.display='inline';
-    document.getElementById('show1').style.display='none'; return false;" style="text-decoration: none;">
+    document.getElementById('show1').style.display='none';" style="text-decoration: none;">
         + menu</a> 
       </span>
       
       <span id="hide1" style="display: none;">
       <a href="#" onClick="document.getElementById('text1').style.display='none';
     document.getElementById('hide1').style.display='none';
-    document.getElementById('show1').style.display='inline'; return false;" style="text-decoration: none;">
+    document.getElementById('show1').style.display='inline';" style="text-decoration: none;">
       &ndash; menu</a>
     </span>
     </div>
@@ -92,6 +93,10 @@
         <p>This technology uses your voice to access files and programs on your computer. This software can be used with many different applications, for example: Word, Steam, or Chrome. It listens to what you are saying, and then uses speech to text to interpret your commands, and then runs them. It can also be used in virtual reality. VoiceAttack, in combination with a screen reader, could make using a computer even faster for blind and visually impaired users.</p>        
         <p>Here is the link to VoiceAttack: <a href="https://voiceattack.com/" target="_blank"> VoiceAttack Website</a></p>
     </main>
+    
+    <a onclick="highContrast()" class="contrastbutton">
+        <p class="contrastbuttontext">High<br>Contrast</p>
+    </a>
 
     <footer>
         <p>&#169 2022 by Group4, IUPUI & Haaga-Helia AMK</p>

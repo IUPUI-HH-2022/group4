@@ -1,19 +1,6 @@
-// Accessability JavaScript - Miska
+// Javascript for accessability features
 
-function darkMode() {
-    const theme = document.querySelector("#theme");
-
-    if(theme.getAttribute("href") == "styles/style.css") {
-        theme.href = "styles/style-dark.css";
-    }
-    else {
-        theme.href = "styles/style.css";
-    }
+function highContrast() {
+    let element = document.body;
+    element.classList.toggle('highcontrast');
 }
-
-function increaseFontSize() {
-    //TODO
-}
-
-function decreaseFontSize() {
-    //TODO

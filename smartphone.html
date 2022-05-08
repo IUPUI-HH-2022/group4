@@ -6,19 +6,20 @@
     <title>Smartphones for the blind</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/accessability.js"></script>
 </head>
 <nav>  
     <div class="smallmenu">
     <span id="show1">
       <a href="#" onClick="document.getElementById('text1').style.display='inline';
     document.getElementById('hide1').style.display='inline';
-    document.getElementById('show1').style.display='none'; return false;" style="text-decoration: none;">
+    document.getElementById('show1').style.display='none';" style="text-decoration: none;">
         + menu</a> 
       </span>
       <span id="hide1" style="display: none;">
       <a href="#" onClick="document.getElementById('text1').style.display='none';
     document.getElementById('hide1').style.display='none';
-    document.getElementById('show1').style.display='inline'; return false;" style="text-decoration: none;">
+    document.getElementById('show1').style.display='inline';" style="text-decoration: none;">
       &ndash; menu</a>
     </span>
     </div>      
@@ -89,6 +90,10 @@
         </div>
 
     </main>
+
+    <a onclick="highContrast()" class="contrastbutton">
+        <p class="contrastbuttontext">High<br>Contrast</p>
+    </a>
 
     <footer>
         <p>&#169 2022 by Group4, IUPUI & Haaga-Helia AMK</p>
